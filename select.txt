@@ -1,0 +1,19 @@
+import os
+import random
+
+infile = 'data.txt'
+out1 = 'train.txt'
+out2 = 'val.txt'
+
+count = 0
+ot1 = open(out1, 'w')
+ot2 = open(out2, 'w')
+for line in open(infile, 'r'):
+    count += 1
+    if random.random() < 0.01:
+        ot2.write(line)
+        print count, 'val'
+    else:
+        ot1.write(line)
+ot1.close()
+ot2.close()
