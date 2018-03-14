@@ -1,4 +1,4 @@
-# Verification-code-Recognization
+# Verification-code-Recognition
 This program aims to recgonize verification code (from 0 to 9)
 
 ### usage
